@@ -14,7 +14,7 @@ public class CamaraJugador : MonoBehaviour
     {
         transform.position = new Vector3(
             jugador.position.x + offset.x,
-            transform.position.y,
+            jugador.position.y + offset.y,
             jugador.position.z + offset.z
         );
     }

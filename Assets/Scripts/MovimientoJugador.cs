@@ -38,6 +38,10 @@ public class MovimientoJugador : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         estaEnSuelo = true;
+        
+        SeguirJugador zona = FindAnyObjectByType<SeguirJugador>();
+    if (zona != null)
+        zona.BajarZona();
     }
 
     void OnCollisionExit(Collision collision)
